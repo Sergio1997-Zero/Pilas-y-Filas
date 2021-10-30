@@ -1,0 +1,47 @@
+class ejerci
+{
+    constructor()
+    {
+        this.elementos={}   
+        this.strings = {}    
+        this.principio1=0
+        this.final01=0  
+        this.final02 = 0      
+    }
+
+    encolar(tamano)
+    {
+        for(let i=0; i < tamano; i++)
+        {
+            let check = prompt("n o s ")
+            if(check == "n")
+            {
+                let valor = parseInt(prompt("ingrese un valor: "))
+                this.elementos[this.final01]=valor
+                this.final01++
+            }
+            if(check =="s")
+            {
+                let valor = prompt("ingrese un valor: ")
+                this.elementos[this.final01]=valor
+                this.final01++
+            }            
+        }
+    }
+
+    Strings()
+    {
+        for(let i = 0; i < this.final01; i++)
+        {            
+            if(typeof this.elementos[i] == "string")
+            {
+                this.strings[this.final02] = this.elementos[i]
+                this.final02++                            
+            }
+        }
+        console.log(this.strings)
+    }
+}
+let ejer = new ejerci()
+ejer.encolar(3)
+ejer.Strings()

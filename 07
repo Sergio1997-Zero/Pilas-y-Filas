@@ -1,0 +1,44 @@
+class pilas
+{
+    constructor()
+    {        
+        this.numeros = [2,7,8,"cr7","Javi","siuu",true,["fer","xoo"]] 
+        this.strings = 0
+        this.numers = 0
+        this.arregles = 0
+        this.bool = 0                      
+    }
+
+    Tipos()
+    {
+        for(let x = 0; x < this.numeros.length; x++)
+        {
+            if(typeof this.numeros[x] == "string")
+            {
+                
+                this.strings++
+
+            }
+            if(typeof this.numeros[x] == "number")
+            {
+                this.numers++
+            }
+            if(typeof this.numeros[x] == "boole")
+            {
+                this.bool++
+            }
+            if(typeof this.numeros[x] == "object")
+            {
+                this.arregles++
+            }
+        }
+        console.log(this.numeros)
+        console.log(`Cantidad de numeros : ${this.numers}`)
+        console.log("Cantidad de strings: " + this.strings)        
+        console.log(`Cantidad de arreglos : ${this.arregles}`)
+        console.log(`Cantidad de boole : ${this.bool}`)
+    }  
+    
+}
+let pilas1 = new pilas
+pilas1.Tipos()

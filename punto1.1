@@ -1,0 +1,26 @@
+class colas
+{
+  constructor()
+  {
+    this.elemento = {};
+    this.primero = 0;
+    this.final = 0;
+  }  
+
+   rellenar1(parametro)
+   {      
+       this.elemento[this.final] = parametro
+       this.final++     
+        
+   }
+
+}
+
+let colas1 = new colas()
+let tamanio = parseInt(prompt("Ingrese la cantidad : "))
+for(let x = 1; x <= tamanio; x++)
+{
+ let valor = prompt("Ingrese valor: ")
+ colas1.rellenar1(valor) 
+}
+console.log(colas1.elemento)

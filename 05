@@ -1,0 +1,24 @@
+class pilas
+{
+    constructor()
+    {        
+        this.numeros = [7,3,2,6,5,8] 
+        this.impares = []                      
+    }
+
+    Impares()
+    {
+        for(let x = 0; x < this.numeros.length;x++)
+        {
+            if(this.numeros[x] % 2 != 0)
+            {
+                this.impares.push(this.numeros[x])
+            }
+        }
+        console.log(this.numeros)
+        console.log(this.impares)
+    }  
+    
+}
+let pilas1 = new pilas
+pilas1.Impares()

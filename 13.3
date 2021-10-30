@@ -1,0 +1,37 @@
+class ejerci
+{
+    constructor()
+    {
+        this.elementos={}       
+        this.principio=0
+        this.final=0        
+    }
+    sumar()
+    {
+        let suma = 0
+        for(let i = 0; i < this.final; i++)
+        {
+            suma += parseInt(this.elementos[i])
+             
+        }
+        console.log(this.elementos)
+        console.log(suma)
+    }
+
+    encolar(tamanio)
+    {
+        for(let i=0; i < tamanio; i++)
+        {
+            let valor=prompt("ingrese un valor: ")
+            this.elementos[this.final]=valor
+            this.final++
+        }
+    }
+
+    
+
+
+}
+let ejer = new ejerci()
+ejer.encolar(4)
+ejer.sumar()

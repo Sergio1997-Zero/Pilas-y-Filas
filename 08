@@ -1,0 +1,27 @@
+class pilas
+{
+    constructor()
+    {        
+        this.arreglo = ["juan","david","sergio","sam"] 
+        this.nuevoarr = []                           
+    }
+
+
+    eliminar()
+    {
+        
+        console.log(this.arreglo)
+        let arr = prompt("Ingrese el valor a eliminar: ")
+        for(let x = 0; x < this.arreglo.length; x++)
+        {
+            if(arr != this.arreglo[x])
+            {
+               this.nuevoarr.push(this.arreglo[x])                   
+            }          
+        }
+        console.log(this.nuevoarr)
+    }
+}
+
+let pilas1 = new pilas()
+pilas1.eliminar()

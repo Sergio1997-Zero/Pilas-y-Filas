@@ -1,0 +1,24 @@
+class pilas
+{
+    constructor()
+    {        
+        this.numeros = [2,7,8,"cr7","Javi","siuu"] 
+        this.strings = []                      
+    }
+
+    String()
+    {
+        for(let x = 0; x < this.numeros.length;x++)
+        {
+            if(typeof this.numeros[x] == "string")
+            {
+                this.strings.push(this.numeros[x])
+            }
+        }
+        console.log(this.numeros)
+        console.log(this.strings)
+    }  
+    
+}
+let pilas1 = new pilas
+pilas1.String()

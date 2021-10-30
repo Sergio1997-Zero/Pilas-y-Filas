@@ -1,0 +1,22 @@
+class ejercicio{
+
+    constructor()
+    {
+        this.numeros = []
+        this.nombre = "Pila "
+    }
+
+    rellenar()
+    {
+        let tamanio = parseInt(prompt("Ingrese la cantidad  "))
+        for(let x = 1; x <= tamanio; x++)
+        {
+         let valor = prompt("Ingrese un valor: ")
+         this.numeros.push(valor)
+        }
+        console.log(this.numeros)
+    }
+
+}
+let ejer1 = new ejercicio()
+ejer1.rellenar()

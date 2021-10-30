@@ -1,0 +1,33 @@
+class pilas{
+
+    constructor()
+    {        
+        this.numer = [2,1,4,4,"tilin",5,6,false] // 22
+        this.resultado = 0               
+    }
+
+    sumar()
+    {
+        for(let x = 0; x < this.numer.length;x++)
+        {
+           if(typeof this.numer[x] == "number" )
+           {
+                this.resultado += this.numer[x]
+           }
+           else
+           {
+               console.log(x)
+               console.log(typeof this.numer[x])
+           } 
+                  
+            
+        }
+        console.log(this.numer)         
+        console.log(this.resultado)
+
+    }
+
+    
+}
+let pilas1 = new pilas
+pilas1.sumar()

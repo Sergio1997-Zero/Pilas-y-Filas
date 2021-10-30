@@ -1,0 +1,33 @@
+class colas{
+    constructor(){
+        this.elementos={}
+        this.nuevaLista={}
+        this.principio=0
+        this.final=0
+    }
+    encolar(){
+        for(let i=0; i<4;i++){
+            let valor=prompt("ingrese un valor: ")
+            this.elementos[this.final]=valor
+            this.final++
+        }
+    }
+        Orden(){
+        for(let i=0;i<this.final;i++){
+            if(this.elementos[i]%2==0){
+                this.nuevaLista[i]=true
+        }
+        else{
+            this.nuevaLis[i]=false
+        }
+        }
+        console.log(this.elementos)
+        console.log(this.nuevaLista)
+
+    }
+
+
+}
+let cola1 = new colas()
+cola1.encolar()
+cola1.Orden()

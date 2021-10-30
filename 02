@@ -1,0 +1,30 @@
+class pilas{
+
+    constructor()
+    {        
+        this.numeros = [2,7,3,5,3,5]
+        this.resultado = []               
+    }
+
+    validar()
+    {
+        for(let x = 0; x < this.numeros.length;x++)
+        {
+            if(this.numeros[x] % 2 == 0)
+            {
+                this.resultado.push(true)
+            }
+            else
+            {
+                this.resultado.push(false)
+            }   
+        }
+        console.log(this.numeros)         
+        console.log(this.resultado)
+
+    }
+
+    
+}
+let pilas1 = new pilas
+pilas1.validar()
